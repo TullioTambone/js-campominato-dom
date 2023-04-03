@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block; 
+}
+
+#web-app{
+    height: 100vh;
+    width: 100%;
+}
+
+header,
+footer{
+    height: 10vh;
+    background-color: white;
+    padding: 1rem;
+}
+
+main{
+    height: 80vh;
+    background-color: aquamarine;
+}
+
+header,
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-sx{
+    display: flex;
+    align-items: center;
+}
+
+#difficulty{
+    margin-right: 10px;
+    background-color: rgb(237, 237, 237);
+    width: 150px;
+    border-radius: 3px;
+}
+
+#play{
+    width: 50px;
+}
+
+/* game */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-easy,
+.box-hard,
+.box-medium{
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-hard{
+    flex-basis: calc(100% / 10);
+}
+
+.box-medium{
+    flex-basis: calc(100% / 9);
+}
+
+.box-easy{
+    flex-basis: calc(100% / 7);
+}
+
+.active{
+    background-color: bisque;
+}
